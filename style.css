@@ -1,0 +1,190 @@
+html,body{
+height:100%;
+margin:0;
+padding:0;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 1;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("trans.jpg");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("mario.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("mac.jpg");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+
+
+header{
+background:transparent;
+position:absolute;
+padding:10px 100px;
+top:0;
+left:0;
+width:85%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+font-family:audiowide;
+}
+
+header .logo{
+color:green;
+font-style:italic;
+font-size:2em;
+font-weight:700;
+text-decoration:none;
+}
+
+header .logo span{
+color:lime;}
+
+header ul{
+display:flex;
+gap:40px;}
+
+header ul li{
+list-style-type:none;
+}
+
+header ul li a{
+text-decoration:none;
+font-weight:500;
+font-size:1.8em;
+color:cyan;}
+
+header ul li a:hover{
+transition:0.7s;
+font-weight:800;
+color:lime;
+}
+
+.box{
+position:absolute;
+bottom:85px;
+display:flex;
+right:90px;
+}
+
+.cops{
+position:absolute;
+display:inline;
+line-heigth:1em;
+font-family:audiowide;
+top:80px;
+left:96px;}
+
+.banner2{
+ display:flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   overflow:hidden;
+   background:white;
+   color:black;
+margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:audiowide;
+ }
+
+.banner2 ul{
+  position:relative;
+}
+
+.banner2 ul li{
+  list-style: none;
+  text-align: center;
+}
+
+.banner2 ul li a{
+  color:black;
+  text-decoration:none;
+  font-size:19px;
+  padding:5px 20px;
+  display:inline-flex;
+  font-weight:300;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.banner2 ul li:hover a{
+  background:transparent;
+  color:var(--clr);
+  opacity:0.9;
+}
+
+.banner2 ul:hover>li:not(:hover)
+{opacity:0;
+}
+
+.banner2 ul li a::before
+{
+  content:'';
+  position:absolute;
+  top:50%;
+  left:40%;
+  transform:translate(-50%,-50%);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:3em;
+  opacity:0.5;
+color:#222;
+z-index:-1;
+font-weight:400;
+letter-spacing: 500px;
+text-transform: initial;
+transition:letter-spacing 0.5s;}
+
+.banner2 ul li a:hover::before 
+{content:attr(data-text);
+opacity:1;
+background:var(--clr);
+width:250vh;
+height:250vh;
+letter-spacing:0;
+left:50%;}
+}
+
+.robo{
+position:absolute;
+display:inline;
+line-heigth:1em;
+font-family:audiowide;
+padding:50px 200px;
+top:80px;
+left:140px;}
+}
