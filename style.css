@@ -1,190 +1,298 @@
-html,body{
-height:100%;
-margin:0;
-padding:0;
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* --- Parallax Sections --- */
 .bgimg-1, .bgimg-2, .bgimg-3 {
-  position: relative;
-  opacity: 1;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
+    position: relative;
+    opacity: 1;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
 .bgimg-1 {
-  background-image: url("trans.jpg");
-  min-height: 100%;
+    background-image: url("trans.jpg");
+    min-height: 100vh;
 }
 
 .bgimg-2 {
-  background-image: url("mario.jpg");
-  min-height: 400px;
+    background-image: url("mario.jpg");
+    min-height: 400px;
 }
 
 .bgimg-3 {
-  background-image: url("mac.jpg");
-  min-height: 400px;
+    background-image: url("mac.jpg");
+    min-height: 400px;
 }
 
+/* --- Responsive Header --- */
+header {
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5vw; /* Use viewport units for padding */
+    font-family: 'Audiowide', sans-serif;
+}
+
+header .logo {
+    color: green;
+    font-style: italic;
+    font-size: 2em;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+header .logo span {
+    color: lime;
+}
+
+header ul {
+    display: flex;
+    gap: 4vw; /* Use viewport units for spacing */
+    padding: 0;
+    margin: 0;
+}
+
+header ul li {
+    list-style-type: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.8em;
+    color: cyan;
+}
+
+header ul li a:hover {
+    transition: 0.7s;
+    font-weight: 800;
+    color: lime;
+}
+
+/* --- Hero Section Text --- */
+.cops {
+    position: absolute;
+    top: 15vh; /* Responsive positioning */
+    left: 5vw;
+    font-family: 'Audiowide', sans-serif;
+    color: white;
+    font-style: italic;
+    line-height: 1.2;
+}
+
+.cops p {
+    font-size: 1.5em;
+    font-weight: 800;
+}
+
+.cops h2, .cops h3 {
+    font-size: 1.9em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.box {
+    position: absolute;
+    bottom: 10vh; /* Responsive positioning */
+    right: 5vw;
+}
+
+.box h2 {
+    color: white;
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+.box #text {
+    color: lime;
+    font-size: 1.2em;
+}
+
+/* --- About and Quote Sections --- */
+.about-section, .quote-section, .achievements-section {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 50px 10vw;
+}
+
+.about-section h3 {
+    font-family: 'Audiowide', sans-serif;
+}
+
+.quote-section {
+    background-color: #282E34;
+    color: #ddd;
+    padding: 50px 10vw;
+}
+
+.achievements-section {
+    background-color: #141414;
+    color: white;
+    padding: 50px 10vw;
+}
+
+.achievements-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.achievements-list li {
+    padding: 10px 0;
+}
+
+.achievements-list span {
+    color: red;
+}
+
+/* --- Parallax Caption --- */
 .caption {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: 100%;
-  text-align: center;
-  color: #000;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    color: #000;
 }
 
 .caption span.border {
-  background-color: #111;
-  color: #fff;
-  padding: 18px;
-  font-size: 25px;
-  letter-spacing: 10px;
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
 }
 
-
-
-header{
-background:transparent;
-position:absolute;
-padding:10px 100px;
-top:0;
-left:0;
-width:85%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-font-family:audiowide;
+/* --- Responsive Typed.js Text --- */
+.robo {
+    position: absolute;
+    top: 15vh;
+    left: 5vw;
+    font-family: 'Audiowide', sans-serif;
+    color: white;
+    font-style: italic;
+    line-height: 1.2;
+    padding: 20px 5vw;
 }
 
-header .logo{
-color:green;
-font-style:italic;
-font-size:2em;
-font-weight:700;
-text-decoration:none;
+.robo h2 {
+    font-size: 1.5em;
 }
 
-header .logo span{
-color:lime;}
-
-header ul{
-display:flex;
-gap:40px;}
-
-header ul li{
-list-style-type:none;
+/* --- Social Buttons Section --- */
+.banner2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: white;
+    color: black;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Audiowide', sans-serif;
 }
 
-header ul li a{
-text-decoration:none;
-font-weight:500;
-font-size:1.8em;
-color:cyan;}
-
-header ul li a:hover{
-transition:0.7s;
-font-weight:800;
-color:lime;
+.banner2 ul {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
-.box{
-position:absolute;
-bottom:85px;
-display:flex;
-right:90px;
+.banner2 ul li {
+    text-align: center;
+    margin: 10px 0;
 }
 
-.cops{
-position:absolute;
-display:inline;
-line-heigth:1em;
-font-family:audiowide;
-top:80px;
-left:96px;}
-
-.banner2{
- display:flex;
-   justify-content: center;
-   align-items: center;
-   min-height: 100vh;
-   overflow:hidden;
-   background:white;
-   color:black;
-margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:audiowide;
- }
-
-.banner2 ul{
-  position:relative;
+.banner2 ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 19px;
+    padding: 5px 20px;
+    display: inline-flex;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
 }
 
-.banner2 ul li{
-  list-style: none;
-  text-align: center;
+.banner2 ul li:hover a {
+    background: transparent;
+    color: var(--clr);
+    opacity: 0.9;
 }
 
-.banner2 ul li a{
-  color:black;
-  text-decoration:none;
-  font-size:19px;
-  padding:5px 20px;
-  display:inline-flex;
-  font-weight:300;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+.banner2 ul:hover > li:not(:hover) {
+    opacity: 0;
 }
 
-.banner2 ul li:hover a{
-  background:transparent;
-  color:var(--clr);
-  opacity:0.9;
+.banner2 ul li a::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    opacity: 0.5;
+    color: #222;
+    z-index: -1;
+    font-weight: 400;
+    letter-spacing: 500px;
+    text-transform: initial;
+    transition: letter-spacing 0.5s;
 }
 
-.banner2 ul:hover>li:not(:hover)
-{opacity:0;
+.banner2 ul li a:hover::before {
+    content: attr(data-text);
+    opacity: 1;
+    background: var(--clr);
+    width: 250vw; /* Adjusted for responsive width */
+    height: 250vh; /* Adjusted for responsive height */
+    letter-spacing: 0;
+    left: 50%;
 }
 
-.banner2 ul li a::before
-{
-  content:'';
-  position:absolute;
-  top:50%;
-  left:40%;
-  transform:translate(-50%,-50%);
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  font-size:3em;
-  opacity:0.5;
-color:#222;
-z-index:-1;
-font-weight:400;
-letter-spacing: 500px;
-text-transform: initial;
-transition:letter-spacing 0.5s;}
+/* --- Media Queries for smaller screens --- */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+    }
 
-.banner2 ul li a:hover::before 
-{content:attr(data-text);
-opacity:1;
-background:var(--clr);
-width:250vh;
-height:250vh;
-letter-spacing:0;
-left:50%;}
-}
+    header ul {
+        margin-top: 10px;
+        gap: 2vw;
+    }
+    
+    .cops, .box {
+        position: static;
+        text-align: center;
+        padding-top: 100px;
+        margin-bottom: 20px;
+    }
+    
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll; /* Disable parallax on mobile for better performance */
+    }
 
-.robo{
-position:absolute;
-display:inline;
-line-heigth:1em;
-font-family:audiowide;
-padding:50px 200px;
-top:80px;
-left:140px;}
+    .about-section, .quote-section, .achievements-section {
+        padding: 30px 5vw;
+    }
 }
